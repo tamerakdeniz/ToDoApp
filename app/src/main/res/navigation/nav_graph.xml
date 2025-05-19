@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.todoapp.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/addToDoTransition"
+            app:destination="@id/addToDoFragment" />
+        <action
+            android:id="@+id/detailToDoTransition"
+            app:destination="@id/toDoDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addToDoFragment"
+        android:name="com.example.todoapp.ui.fragment.AddToDoFragment"
+        android:label="fragment_add_to_do"
+        tools:layout="@layout/fragment_add_to_do">
+        <action
+            android:id="@+id/backToHomeTransition"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/toDoDetailFragment"
+        android:name="com.example.todoapp.ui.fragment.ToDoDetailFragment"
+        android:label="fragment_to_do_detail"
+        tools:layout="@layout/fragment_to_do_detail" >
+        <argument
+            android:name="todo"
+            app:argType="com.example.todoapp.data.entity.ToDos" />
+        <action
+            android:id="@+id/backToHomeFromDetailTransition"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>
