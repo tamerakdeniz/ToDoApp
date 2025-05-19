@@ -3,6 +3,14 @@
 A simple, modern Android To-Do application built with Kotlin, Room, and Material Design.  
 Project URL: [@https://github.com/tamerakdeniz/ToDoApp](https://github.com/tamerakdeniz/ToDoApp)
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fdd6e214-62c8-430d-b3de-bb6846b0e3b7" alt="screenshot1" width="200"/>
+  <img src="https://github.com/user-attachments/assets/661f304d-5aab-4535-bc99-843bab50d96b" alt="screenshot2" width="200"/>
+  <img src="https://github.com/user-attachments/assets/9cf50612-1dcb-4c1d-aded-0bd979462f81" alt="screenshot3" width="200"/>
+  <img src="https://github.com/user-attachments/assets/16bb219a-65b1-48c3-a0c2-d393d398558c" alt="screenshot4" width="200"/>
+</p>
+
+
 ---
 
 ## 📁 Project Structure & Important Files
